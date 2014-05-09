@@ -27,11 +27,11 @@ class TPCompass implements Plugin {
 			case "player.action":
 				$player = $data["player"];
 				$item = $data["item"];
-				//*****************************************************************
-				//**** This snippet come from src\Player.php line 1701 to 1739 ****
-				//*****************************************************************
 				if($item == 345) {
 					console("compass");
+					//*****************************************************************
+					//**** This snippet come from src\Player.php line 1701 to 1739 ****
+					//*****************************************************************
 					$rotation = ($player->entity->yaw - 90) % 360;
 					if($rotation < 0){
 						$rotation = (360 + $rotation);
